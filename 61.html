@@ -1,265 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propeller System Q&A</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #1a1a1a;
-            margin-bottom: 25px;
-            font-size: 2em;
-        }
-        h2 {
-            color: #0056b3;
-            margin-top: 20px;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #ccc;
-            font-size: 1.5em;
-        }
-        h3 {
-            color: #007bff;
-            margin-top: 15px;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        p {
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-        .question {
-            font-weight: bold;
-            color: #444;
-            margin-top: 10px;
-        }
-        .answer {
-            margin-left: 20px;
-            color: #666;
-        }
-        .section-box {
-            background-color: #e9f7ff;
-            border: 1px solid #cceeff;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-        }
-    </style>
+<title>Propeller Information</title>
+<style>
+  body { font-family: sans-serif; }
+  .section-title { font-weight: bold; margin-top: 20px; }
+  .question { font-style: italic; margin-left: 10px; }
+  .answer { margin-left: 20px; }
+  .source { font-size: 0.8em; color: gray; }
+  ul { list-style-type: none; padding-left: 0; }
+  li { margin-bottom: 5px; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Propeller System: Questions & Answers</h1>
 
-        <div class="section-box">
-            <h2>General Propeller Information</h2>
-            <div>
-                <p class="question">1. What are the major components of the propeller?</p>
-                <p class="answer">The major components are the Blades, Hub, Crosshead, Beta Tube Assembly, Pitch Change Cylinder and Piston, Blade Bearings, and Blade Counterweights.</p>
-            </div>
-            <div>
-                <p class="question">2. What is the model number of the propeller, and what do its components stand for?</p>
-                <p class="answer">The model number is CR408/6-123-F/17. The breakdown is: C: Civil, R: Dowty Aerospace Propellers, 408: Aircraft type identification, 6: Number of blades, 123: Blade root end size in mm, F: Flange mounted, 17: Function / Installation characteristics.</p>
-            </div>
-            <div>
-                <p class="question">3. What materials are the propeller blades made of, and what is the propeller's diameter?</p>
-                <p class="answer">The propeller has six all-composite blades, and the diameter is 13.5 ft (4.11 m).</p>
-            </div>
-            <div>
-                <p class="question">4. How is the propeller's blade pitch changed?</p>
-                <p class="answer">Blade pitch is changed using an electronically controlled hydraulic pitch actuation system, which is accomplished by metered oil pressure.</p>
-            </div>
-            <div>
-                <p class="question">5. In the event of an oil pressure failure, what will happen to the propeller blades?</p>
-                <p class="answer">The propeller blades are counter-weighted to move towards coarse pitch in the event of an oil pressure failure.</p>
-            </div>
-        </div>
+  <div class="section-title">Propeller Components, Materials, and Specifications</div>
+  
+  <div class="question">What are the major components of the propeller?</div>
+  [span_0](start_span)[span_1](start_span)<div class="answer">The major components are the Blades, Hub, Crosshead, Beta Tube Assembly, Pitch Change Cylinder and Piston, Blade Bearings, and Blade Counterweights.[span_0](end_span)[span_1](end_span)</div>
 
-        <div class="section-box" style="background-color: #e9ffe9; border-color: #ccffcc;">
-            <h2>Propeller Control and Operation</h2>
-            <div>
-                <p class="question">1. How is torque transmitted from the engine reduction gearbox to the propeller?</p>
-                <p class="answer">Torque is transmitted from the reduction gearbox through three dowels and the friction of the flange interface. The dowels account for approximately 50% of the torque transmission, and the flange friction accounts for the other 50%.</p>
-            </div>
-            <div>
-                <p class="question">2. What is the Propeller Electronic Control (PEC), and what does it do?</p>
-                <p class="answer">The Propeller Electronic Control (PEC) is a dual-channel, microprocessor-based controller that uses inputs from the aircraft, propeller control system sensors, and the engine control system to control propeller pitch and speed.</p>
-            </div>
-            <div>
-                <p class="question">3. What components are electronically connected to the PEC?</p>
-                <p class="answer">The PEC is electronically connected to the condition lever, power lever (through FADEC), Magnetic Pick-up Unit (MPU), Beta Feedback Transducer (BFT), Pitch Control Unit (PCU), and the Full Authority Digital Electronic Control (FADEC).</p>
-            </div>
-            <div>
-                <p class="question">4. What is the function of the Pitch Control Unit (PCU)?</p>
-                <p class="answer">The Pitch Control Unit (PCU) is a hydromechanical device that is commanded by the PEC. It meters high-pressure engine oil to a servo valve and controls the flow of oil to the fine or coarse pitch chambers of the propeller to move the blades in the desired direction.</p>
-            </div>
-            <div>
-                <p class="question">5. What is the purpose of the Propeller Overspeed Governor Unit?</p>
-                <p class="answer">The Propeller Overspeed Governor Unit is an independent mechanical system that protects the propeller from overspeeding.</p>
-            </div>
-            <div>
-                <p class="question">6. What is the Auxiliary Feathering Pump Unit used for?</p>
-                <p class="answer">The Auxiliary Feathering Pump Unit provides an independent way to feather the propeller if the primary feathering system fails.</p>
-            </div>
-        </div>
+  <div class="question">What is the model number of the propeller, and what do its components stand for?</div>
+  [span_2](start_span)[span_3](start_span)<div class="answer">The model number is CR408/6-123-F/17.[span_2](end_span)[span_3](end_span)</div>
+  <ul>
+    [span_4](start_span)[span_5](start_span)<li>C: Civil[span_4](end_span)[span_5](end_span)</li>
+    [span_6](start_span)[span_7](start_span)<li>R: Dowty Aerospace Propellers[span_6](end_span)[span_7](end_span)</li>
+    [span_8](start_span)[span_9](start_span)<li>408: Aircraft type identification[span_8](end_span)[span_9](end_span)</li>
+    [span_10](start_span)[span_11](start_span)<li>6: Number of blades[span_10](end_span)[span_11](end_span)</li>
+    [span_12](start_span)[span_13](start_span)<li>123: Blade root end size in mm[span_12](end_span)[span_13](end_span)</li>
+    [span_14](start_span)[span_15](start_span)<li>F: Flange mounted[span_14](end_span)[span_15](end_span)</li>
+    [span_16](start_span)[span_17](start_span)<li>17: Function / Installation characteristics[span_16](end_span)[span_17](end_span)</li>
+  </ul>
 
-        <div class="section-box" style="background-color: #fffde7; border-color: #ffeb3b;">
-            <h2>Feathering and Underspeed Protection</h2>
-            <div>
-                <p class="question">1. What is the Propeller Overspeed Governor Unit and what is its purpose?</p>
-                <p class="answer">The Propeller Overspeed Governor Unit is an independent mechanical system that protects the propeller from overspeeding.</p>
-            </div>
-            <div>
-                <p class="question">2. What are the three propeller feathering systems mentioned in the document?</p>
-                <p class="answer">The propeller feathering systems provide autofeathering, alternate feathering and unfeathering, and manual feathering.</p>
-            </div>
-            <div>
-                <p class="question">3. What is the function of the Automatic Underspeed Protection Circuit (AUPC)?</p>
-                <p class="answer">The AUPC is a circuit included in the PEC to prevent a catastrophic event in the case of an unsolicited coarse pitch demand due to a software or hardware failure. It sends a "drive fine" signal to the PCU in the event of propeller underspeeding due to a common mode software error, which ensures total aircraft thrust loss does not fall below the thrust of a single engine.</p>
-            </div>
-            <div>
-                <p class="question">4. How is the propeller tested on the ground?</p>
-                <p class="answer">The OSG can be tested on the ground by operating the PROP O'SPEED GOVERNOR test switch on the Pilots Side Panel on the flight deck.</p>
-            </div>
-        </div>
+  <div class="question">What materials are the propeller blades made of, and what is the propeller's diameter?</div>
+  [span_18](start_span)[span_19](start_span)[span_20](start_span)<div class="answer">The propeller has six all-composite blades with a foam core, twin carbon fiber spars, and an overall braided carbon/glass fiber shell.[span_18](end_span)[span_19](end_span)[span_20](end_span) [span_21](start_span)[span_22](start_span)The propeller's diameter is 13.5 ft (4.11 m)[span_21](end_span)[span_22](end_span).</div>
 
-        <div class="section-box" style="background-color: #f3e9ff; border-color: #cc99ff;">
-            <h2>Beta Mode and Synchrophasing</h2>
-            <div>
-                <p class="question">1. What is the Beta Mode?</p>
-                <p class="answer">The Beta range is from a power lever position above FLIGHT IDLE to the full reverse (MAX REV) position. When the propeller is in Beta mode, the blade angle is set by the power lever input.</p>
-            </div>
-            <div>
-                <p class="question">2. What is the purpose of the Propeller Synchrophasing System?</p>
-                <p class="answer">The Propeller Synchrophasing System reduces cabin noise by controlling the relative position, or phase difference, between the slave propeller and the master propeller to a demanded angle.</p>
-            </div>
-            <div>
-                <p class="question">3. What happens if the Propeller Overspeed Governor (OSG) fails to control an overspeed condition?</p>
-                <p class="answer">If the OSG fails, the FADEC will reduce engine fuel at approximately 1122 Np, which will cause the Np to decrease.</p>
-            </div>
-            <div>
-                <p class="question">4. What are the three types of propeller feathering systems mentioned?</p>
-                <p class="answer">The propeller feathering systems provide autofeathering, alternate feathering and unfeathering, and manual feathering.</p>
-            </div>
-            <div>
-                <p class="question">5. How is the propeller speed controlled in Reverse Speed Control mode?</p>
-                <p class="answer">In this mode, the system operates in a closed-loop propeller RPM control, maintaining the propeller speed between 660 and 950 rpm. The engine schedules fuel based on a power schedule versus the Power Lever Angle (PLA).</p>
-            </div>
-            <div>
-                <p class="question">6. What is the function of the 'hard' and 'soft' flight fine stops?</p>
-                <p class="answer">The hydraulic 'hard' flight fine stop limits the fine pitch in the constant speeding mode to approximately 16°. The function of this stop is to maintain a minimum pitch consistent with a positive counterweight effort towards coarse pitch, ensuring the effectiveness of the OSG. A 'soft' stop of approximately 16.5 degrees is programmed into the PEC and is operative while the Power Lever is at or above Flight Idle.</p>
-            </div>
-        </div>
+  <div class="question">How is torque transmitted from the engine reduction gearbox to the propeller?</div>
+  [span_23](start_span)[span_24](start_span)<div class="answer">Torque is transmitted from the reduction gearbox through three dowels and the friction of the flange interface[span_23](end_span)[span_24](end_span). [span_25](start_span)[span_26](start_span)The dowels and flange friction each account for approximately 50% of the torque transmission[span_25](end_span)[span_26](end_span).</div>
+  
+  <div class="question">What are the main components of the propeller assembly?</div>
+  [span_27](start_span)[span_28](start_span)<div class="answer">The main components are the Propeller Blade Assembly, Hub Assembly, and Spinner Assembly[span_27](end_span)[span_28](end_span).</div>
 
-        <div class="section-box" style="background-color: #ffe9e9; border-color: #ffcccc;">
-            <h2>Reverse Speed Control and Overspeed Governing</h2>
-            <div>
-                <p class="question">1. What is the Reverse Speed Control mode?</p>
-                <p class="answer">In this mode, the system operates in a closed-loop propeller RPM control, maintaining the propeller speed between 660 and 950 rpm.</p>
-            </div>
-            <div>
-                <p class="question">2. What happens if the propeller reaches the maximum reverse stop at low airspeeds?</p>
-                <p class="answer">The propeller rotational speed is then controlled by the engine Overspeed Governor (OSG) and can increase up to 1020 RPM.</p>
-            </div>
-            <div>
-                <p class="question">3. What happens during an overspeed condition in Propeller Overspeed Governing?</p>
-                <p class="answer">Propeller RPM is reduced by increasing blade angles.</p>
-            </div>
-            <div>
-                <p class="question">4. What happens if the Overspeed Governor (OSG) fails to control an overspeed condition?</p>
-                <p class="answer">The FADEC will reduce engine fuel, at approximately 1122 Np, which will cause the Np to decrease.</p>
-            </div>
-            <div>
-                <p class="question">5. How does the Propeller Synchrophasing System reduce cabin noise?</p>
-                <p class="answer">The system ensures that the relative position, or phase difference, between the slave propeller and the master propeller is controlled to a demanded angle.</p>
-            </div>
-            <div>
-                <p class="question">6. How is the phase angle calculated by the Propeller Synchrophasing System?</p>
-                <p class="answer">The phase angle is calculated by timing the differences between the master and slave propeller Magnetic Pickup Unit (MPU) signals over a complete propeller revolution.</p>
-            </div>
-        </div>
+  <div class="question">How is the propeller installed on the engine reduction gearbox?</div>
+  [span_29](start_span)[span_30](start_span)<div class="answer">The propeller is installed on the engine reduction gearbox propeller drive flange using 15 threaded studs and nuts, with three location dowels to assist with correct installation and torque transmission[span_29](end_span)[span_30](end_span).</div>
+  
+  <div class="question">What is the purpose of the spinner?</div>
+  [span_31](start_span)[span_32](start_span)<div class="answer">The spinner provides an aerodynamic fairing over the front end of the propeller[span_31](end_span)[span_32](end_span).</div>
+  
+  <div class="question">How is electrical power transferred for blade deicing?</div>
+  [span_33](start_span)[span_34](start_span)<div class="answer">A slipring, installed on the backplate of the hub assembly with bronze rings in a plastic molding, is used to transfer electrical power for blade deicing[span_33](end_span)[span_34](end_span).</div>
+  
+  <div class="section-title">Propeller Control and Operation</div>
+  
+  <div class="question">How is the propeller's blade pitch changed?</div>
+  [span_35](start_span)[span_36](start_span)<div class="answer">Blade pitch is changed using an electronically controlled hydraulic pitch actuation system, which uses metered oil pressure[span_35](end_span)[span_36](end_span).</div>
+  
+  <div class="question">In the event of an oil pressure failure, what will happen to the propeller blades?</div>
+  [span_37](start_span)[span_38](start_span)<div class="answer">The propeller blades are counter-weighted to move towards a coarse pitch in the event of an oil pressure failure[span_37](end_span)[span_38](end_span).</div>
+  
+  <div class="question">What is the Propeller Electronic Control (PEC), and what does it do?</div>
+  [span_39](start_span)[span_40](start_span)<div class="answer">The Propeller Electronic Control (PEC) is a dual-channel, microprocessor-based controller[span_39](end_span)[span_40](end_span). [span_41](start_span)[span_42](start_span)It uses inputs from the aircraft, propeller control system sensors, and the engine control system to control propeller pitch and speed[span_41](end_span)[span_42](end_span).</div>
 
-        <div class="section-box" style="background-color: #e6e6ff; border-color: #ccccff;">
-            <h2>Autofeather and Alternate Feathering</h2>
-            <div>
-                <p class="question">1. What is the purpose of the Propeller Autofeather system?</p>
-                <p class="answer">The autofeather system provides automatically initiated propeller feathering and a power uptrim to the operating engine following an engine failure during takeoff.</p>
-            </div>
-            <div>
-                <p class="question">2. When is the autofeather system armed?</p>
-                <p class="answer">The ARM light turns on when both engine torques exceed a minimum value of 50%, and both power levers are advanced beyond 60° PLA.</p>
-            </div>
-            <div>
-                <p class="question">3. When is autofeather triggered from the armed state?</p>
-                <p class="answer">It is triggered when the torque of the local engine, as indicated by both torque signals, falls below 25% for at least three seconds.</p>
-            </div>
-            <div>
-                <p class="question">4. What happens when one propeller is autofeathered?</p>
-                <p class="answer">The autofeather function of the other propeller is automatically disarmed.</p>
-            </div>
-            <div>
-                <p class="question">5. How is the auxiliary feathering pump activated during an autofeather event?</p>
-                <p class="answer">The auxiliary feathering pump is activated for approximately 30 seconds to ensure adequate oil pressure is available for propeller feathering.</p>
-            </div>
-            <div>
-                <p class="question">6. How can the autofeather system be disarmed?</p>
-                <p class="answer">The autofeather system can be disarmed by pushing the AUTOFEATHER switchlight OFF, retarding one or both power levers to flight idle, or when both engine torques drop below approximately 50%.</p>
-            </div>
-            <div>
-                <p class="question">7. What is the purpose of the propeller speed (NP) underspeed cancel signal?</p>
-                <p class="answer">It prevents the FADEC from raising engine speed in an attempt to maintain propeller rpm as the feathered propeller decreases below 660 rpm.</p>
-            </div>
-            <div>
-                <p class="question">8. What is the procedure for alternate feathering?</p>
-                <p class="answer">Alternate feathering is accomplished by operating the #1 or #2 ALT FTHR switch on the PROPELLER control panel with the Condition Lever at Start/Feather or Fuel Off.</p>
-            </div>
-            <div>
-                <p class="question">9. Why is the feathering pump provided?</p>
-                <p class="answer">The feathering pump is provided to give a back-up feather function when the primary system is inoperative, to enable the propeller to be feathered when the gearbox rpm is too low, and to allow the propeller to be unfeathered on the ground for maintenance purposes.</p>
-            </div>
-        </div>
+  <div class="question">What components are electronically connected to the PEC?</div>
+  [span_43](start_span)[span_44](start_span)<div class="answer">The PEC is electronically connected to the condition lever, power lever (through FADEC), Magnetic Pick-up Unit (MPU), Beta Feedback Transducer (BFT), Pitch Control Unit (PCU), and the Full Authority Digital Electronic Control (FADEC)[span_43](end_span)[span_44](end_span).</div>
+  
+  <div class="question">What is the function of the Pitch Control Unit (PCU)?</div>
+  [span_45](start_span)[span_46](start_span)[span_47](start_span)[span_48](start_span)<div class="answer">The PCU is a hydromechanical device commanded by the PEC[span_45](end_span)[span_46](end_span)[span_47](end_span)[span_48](end_span). [span_49](start_span)[span_50](start_span)[span_51](start_span)[span_52](start_span)It meters high-pressure engine oil to a servo valve and controls the oil flow to the fine or coarse pitch chambers of the propeller to move the blades in the desired direction[span_49](end_span)[span_50](end_span)[span_51](end_span)[span_52](end_span).</div>
+  
+  <div class="question">What is the purpose of the Propeller Overspeed Governor Unit?</div>
+  [span_53](start_span)[span_54](start_span)[span_55](start_span)[span_56](start_span)[span_57](start_span)<div class="answer">The Propeller Overspeed Governor Unit is an independent mechanical system that protects the propeller from overspeeding[span_53](end_span)[span_54](end_span)[span_55](end_span)[span_56](end_span)[span_57](end_span).</div>
+  
+  <div class="question">What is the Auxiliary Feathering Pump Unit used for?</div>
+  [span_58](start_span)[span_59](start_span)[span_60](start_span)[span_61](start_span)<div class="answer">The Auxiliary Feathering Pump Unit provides an independent means to feather the propeller if the primary feathering system fails[span_58](end_span)[span_59](end_span)[span_60](end_span)[span_61](end_span).</div>
+  
+  <div class="question">What are the three propeller feathering systems mentioned in the document?</div>
+  [span_62](start_span)[span_63](start_span)[span_64](start_span)[span_65](start_span)[span_66](start_span)<div class="answer">The propeller feathering systems provide autofeathering, alternate feathering and unfeathering, and manual feathering[span_62](end_span)[span_63](end_span)[span_64](end_span)[span_65](end_span)[span_66](end_span).</div>
+  
+  <div class="question">What is the function of the Automatic Underspeed Protection Circuit (AUPC)?</div>
+  [span_67](start_span)[span_68](start_span)<div class="answer">The AUPC is a circuit within the PEC that prevents a catastrophic event from an unsolicited coarse pitch demand due to a software or hardware failure[span_67](end_span)[span_68](end_span). [span_69](start_span)[span_70](start_span)It sends a "drive fine" signal to the PCU during a propeller underspeed event caused by a common mode software error, ensuring the total aircraft thrust does not fall below the thrust of a single engine[span_69](end_span)[span_70](end_span).</div>
+  
+  <div class="question">How is the propeller tested on the ground?</div>
+  [span_71](start_span)[span_72](start_span)[span_73](start_span)[span_74](start_span)<div class="answer">The Overspeed Governor (OSG) can be tested on the ground by operating the PROP O'SPEED GOVERNOR test switch on the Pilots Side Panel on the flight deck[span_71](end_span)[span_72](end_span)[span_73](end_span)[span_74](end_span).</div>
+  
+  <div class="question">What is the Beta Mode?</div>
+  [span_75](start_span)[span_76](start_span)<div class="answer">The Beta range is from a power lever position above FLIGHT IDLE to the full reverse (MAX REV) position[span_75](end_span)[span_76](end_span). [span_77](start_span)[span_78](start_span)[span_79](start_span)[span_80](start_span)In this mode, the blade angle is set by the power lever input[span_77](end_span)[span_78](end_span)[span_79](end_span)[span_80](end_span).</div>
+  
+  <div class="question">What is the purpose of the Propeller Synchrophasing System?</div>
+  [span_81](start_span)[span_82](start_span)[span_83](start_span)<div class="answer">The Propeller Synchrophasing System reduces cabin noise by controlling the relative position, or phase difference, between the slave propeller and the master propeller to a demanded angle[span_81](end_span)[span_82](end_span)[span_83](end_span).</div>
+  
+  <div class="question">What happens if the Propeller Overspeed Governor (OSG) fails to control an overspeed condition?</div>
+  [span_84](start_span)[span_85](start_span)[span_86](start_span)<div class="answer">If the OSG fails, the FADEC will reduce engine fuel at approximately 1122 Np, causing the Np to decrease[span_84](end_span)[span_85](end_span)[span_86](end_span).</div>
+  
+  <div class="question">How is the propeller speed controlled in Reverse Speed Control mode?</div>
+  [span_87](start_span)[span_88](start_span)[span_89](start_span)<div class="answer">In this mode, the system operates in a closed-loop propeller RPM control, maintaining the propeller speed between 660 and 950 rpm[span_87](end_span)[span_88](end_span)[span_89](end_span).</div>
+  
+  <div class="question">What is the function of the 'hard' and 'soft' flight fine stops?</div>
+  [span_90](start_span)[span_91](start_span)<div class="answer">The hydraulic 'hard' flight fine stop limits the fine pitch in the constant speeding mode to approximately 16°[span_90](end_span)[span_91](end_span). [span_92](start_span)[span_93](start_span)Its function is to maintain a minimum pitch that ensures the effectiveness of the OSG[span_92](end_span)[span_93](end_span). [span_94](start_span)[span_95](start_span)A 'soft' stop of approximately 16.5 degrees is programmed into the PEC and is active when the Power Lever is at or above Flight Idle[span_94](end_span)[span_95](end_span).</div>
+  
+  <div class="question">What happens if the propeller reaches the maximum reverse stop at low airspeeds?</div>
+  [span_96](start_span)[span_97](start_span)<div class="answer">The propeller rotational speed is then controlled by the engine Overspeed Governor (OSG) and can increase up to 1020 RPM[span_96](end_span)[span_97](end_span).</div>
+  
+  <div class="question">What happens during an overspeed condition in Propeller Overspeed Governing?</div>
+  [span_98](start_span)[span_99](start_span)<div class="answer">Propeller RPM is reduced by increasing the blade angles[span_98](end_span)[span_99](end_span).</div>
+  
+  <div class="question">How is the phase angle calculated by the Propeller Synchrophasing System?</div>
+  [span_100](start_span)[span_101](start_span)<div class="answer">The phase angle is calculated by timing the differences between the master and slave propeller Magnetic Pickup Unit (MPU) signals over a complete propeller revolution[span_100](end_span)[span_101](end_span).</div>
+  
+  <div class="question">What is the purpose of the Propeller Autofeather system?</div>
+  [span_102](start_span)[span_103](start_span)[span_104](start_span)<div class="answer">The autofeather system provides automatically initiated propeller feathering and a power uptrim to the operating engine following an engine failure during takeoff[span_102](end_span)[span_103](end_span)[span_104](end_span).</div>
+  
+  <div class="question">When is the autofeather system armed?</div>
+  [span_105](start_span)[span_106](start_span)[span_107](start_span)<div class="answer">The ARM light turns on when both engine torques exceed a minimum of 50%, and both power levers are advanced beyond 60° PLA[span_105](end_span)[span_106](end_span)[span_107](end_span).</div>
+  
+  <div class="question">When is autofeather triggered from the armed state?</div>
+  [span_108](start_span)[span_109](start_span)[span_110](start_span)<div class="answer">It is triggered when the torque of the local engine falls below 25% for at least three seconds, as indicated by both torque signals[span_108](end_span)[span_109](end_span)[span_110](end_span).</div>
+  
+  <div class="question">What happens when one propeller is autofeathered?</div>
+  [span_111](start_span)[span_112](start_span)[span_113](start_span)<div class="answer">The autofeather function of the other propeller is automatically disarmed[span_111](end_span)[span_112](end_span)[span_113](end_span).</div>
+  
+  <div class="question">How is the auxiliary feathering pump activated during an autofeather event?</div>
+  [span_114](start_span)[span_115](start_span)[span_116](start_span)<div class="answer">The auxiliary feathering pump is activated for about 30 seconds to ensure enough oil pressure is available for propeller feathering[span_114](end_span)[span_115](end_span)[span_116](end_span).</div>
+  
+  <div class="question">How can the autofeather system be disarmed?</div>
+  [span_117](start_span)[span_118](start_span)[span_119](start_span)<div class="answer">The autofeather system can be disarmed by pushing the AUTOFEATHER switchlight OFF, retarding one or both power levers to flight idle, or when both engine torques drop below approximately 50%[span_117](end_span)[span_118](end_span)[span_119](end_span).</div>
+  
+  <div class="question">What is the purpose of the propeller speed (NP) underspeed cancel signal?</div>
+  [span_120](start_span)[span_121](start_span)[span_122](start_span)<div class="answer">It prevents the FADEC from raising engine speed in an attempt to maintain propeller rpm as the feathered propeller decreases below 660 rpm[span_120](end_span)[span_121](end_span)[span_122](end_span).</div>
+  
+  <div class="question">What is the procedure for alternate feathering?</div>
+  [span_123](start_span)[span_124](start_span)[span_125](start_span)<div class="answer">Alternate feathering is done by operating the #1 or #2 ALT FTHR switch on the PROPELLER control panel with the Condition Lever at Start/Feather or Fuel Off[span_123](end_span)[span_124](end_span)[span_125](end_span).</div>
+  
+  <div class="question">Why is the feathering pump provided?</div>
+  [span_126](start_span)[span_127](start_span)[span_128](start_span)<div class="answer">The feathering pump is provided to give a back-up feather function if the primary system is inoperative, to enable feathering when the gearbox rpm is too low, and to allow unfeathering on the ground for maintenance[span_126](end_span)[span_127](end_span)[span_128](end_span).</div>
+  
+  <div class="question">How does the propeller convert engine power into thrust?</div>
+  [span_129](start_span)[span_130](start_span)<div class="answer">The propeller assembly converts engine-supplied power into usable thrust for aircraft propulsion during flight and ground maneuvers[span_129](end_span)[span_130](end_span).</div>
 
-        <div class="section-box" style="background-color: #e0fafa; border-color: #b3e0e0;">
-            <h2>Propeller System Components</h2>
-            <div>
-                <p class="question">1. How does the propeller convert engine power into thrust?</p>
-                <p class="answer">The propeller assembly converts engine-supplied power into usable thrust for aircraft propulsion during flight and ground maneuvers.</p>
-            </div>
-            <div>
-                <p class="question">2. What are the main components of the propeller assembly?</p>
-                <p class="answer">The main components are the Propeller Blade Assembly, Hub Assembly, and Spinner Assembly.</p>
-            </div>
-            <div>
-                <p class="question">3. How is the propeller installed on the engine reduction gearbox?</p>
-                <p class="answer">The propeller is installed on the engine reduction gearbox propeller drive flange using 15 threaded studs and nuts. Three location dowels also assist with correct installation and transmit some of the drive torque.</p>
-            </div>
-            <div>
-                <p class="question">4. What are the propeller blades made of?</p>
-                <p class="answer">Each blade has an all-composite airfoil construction with a steel outer root sleeve. The airfoil has a foam core and twin carbon fiber spars with an overall braided carbon/glass fiber shell.</p>
-            </div>
-            <div>
-                <p class="question">5. What is the purpose of the spinner?</p>
-                <p class="answer">The spinner provides an aerodynamic fairing over the front end of the propeller.</p>
-            </div>
-            <div>
-                <p class="question">6. How is electrical power transferred for blade deicing?</p>
-                <p class="answer">A slipring is used to transfer electrical power for blade deicing. The slipring is installed directly onto the backplate of the hub assembly and has bronze rings in a plastic molding.</p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
